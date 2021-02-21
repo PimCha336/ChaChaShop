@@ -4,13 +4,9 @@
 
     <b-row>
     <b-col>
-      <h2>ChaChaShop</h2>
+      <h2>ChachaShop</h2>
     </b-col>
   </b-row>
-
-  <div class="container">
-  <img class="img-responsive" src="https://cdn.pixabay.com/photo/2014/04/03/10/28/leaf-310555_960_720.png" alt="Cha" width="80" height="80"> 
-</div>
 
     <b-row>
     <b-col v-for="product in products" :key="product.id">
@@ -93,7 +89,7 @@
      <b-col></b-col>
      <b-col></b-col>
      <b-col><h3>Total</h3></b-col>
-     <b-col><h3> {{ total }}.00</h3></b-col>
+     <b-col><h3>$ {{ total }}.00</h3></b-col>
   </b-row>
   <b-row v-if="cart.length > 0">
      <b-col>
@@ -135,7 +131,7 @@
       </li>
       <hr>
     </ul>
-    <h2 class="my-4">Total: {{ticket.total}}.00</h2>
+    <h2 class="my-4">Total: ${{ticket.total}}.00</h2>
    
     
   </b-modal>
@@ -183,18 +179,21 @@ export default {
         price:150,
         cart:false,
         quantity:1
+       
+      
     },
     {
         id:4,
-        img:'@/assets/pic4.jpeg',
+        img:'@/assets/pic1.jpeg',
         name:'Milk Oolong Tea',
         price:140,
         cart:false,
         quantity:1
+       
     },
     {
         id:5,
-        img:'@/assets/pic5.jpeg',
+        img:'@/assets/pic2.jpeg',
         name:'Long jing well Green Tea',
         price:160,
         cart:false,
@@ -202,8 +201,8 @@ export default {
     },
     {
         id:6,
-        img:'@/assets/pic6.jpeg',
-        name:'Huo Shan Ya',
+        img:'@/assets/pic3.jpeg',
+         name:'Huo Shan Ya',
         price:180,
         cart:false,
         quantity:1
